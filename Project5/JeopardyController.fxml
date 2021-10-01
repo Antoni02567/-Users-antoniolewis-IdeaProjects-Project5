@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JController">
+   <children>
+      <Pane fx:id="jeopardyPane" layoutY="-8.0" prefHeight="409.0" prefWidth="601.0">
+         <children>
+            <Label alignment="CENTER" layoutX="223.0" layoutY="8.0" prefHeight="31.0" prefWidth="143.0" text="Jeopardy" textAlignment="CENTER" textFill="#fbff00" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="23.0" />
+               </font>
+               <effect>
+                  <ImageInput />
+               </effect>
+            </Label>
+            <ImageView fitHeight="92.0" fitWidth="258.0" layoutX="575.0" layoutY="207.0">
+               <image>
+                  <Image url="@jeop.jpeg" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="gp" alignment="CENTER" gridLinesVisible="true" layoutX="425.0" layoutY="300.0" prefHeight="319.0" prefWidth="578.0">
+              <columnConstraints>
+                <ColumnConstraints fx:id="Realpane" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="93.0" minHeight="0.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="75.0" minHeight="0.0" prefHeight="53.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="buttonImage" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="1" onMousePressed="#Display6">
+                     <image>
+                        <Image url="@one.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0046ff" height="50.0" stroke="BLACK" strokeType="INSIDE" width="98.0" />
+                  <Label fx:id="category1" alignment="CENTER" prefHeight="57.0" prefWidth="96.0" text="Loops" >
+                     <font>
+                        <Font name="Finale Copyist Text Ext" size="20.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007532956685499058" />
+                              <Stop color="#ffee00" offset="0.5122410546139358" />
+                              <Stop color="#36558a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0046ff" height="48.0" stroke="BLACK" strokeType="INSIDE" width="93.0" GridPane.columnIndex="1" />
+                  <Label fx:id="category2" alignment="CENTER" prefHeight="48.0" prefWidth="133.0" text="Quality" wrapText="true" GridPane.columnIndex="1">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007532956685499058" />
+                              <Stop color="#ffee00" offset="0.5122410546139358" />
+                              <Stop color="#36558a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Finale Copyist Text Ext" size="20.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0046ff" height="50.0" stroke="BLACK" strokeType="INSIDE" width="96.0" GridPane.columnIndex="2" />
+                  <Label fx:id="category3" alignment="CENTER" prefHeight="48.0" prefWidth="166.0" text="Functions" GridPane.columnIndex="2">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007532956685499058" />
+                              <Stop color="#ffee00" offset="0.5122410546139358" />
+                              <Stop color="#36558a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Finale Copyist Text Ext" size="20.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0046ff" height="50.0" stroke="BLACK" strokeType="INSIDE" width="96.0" GridPane.columnIndex="3" />
+                  <Label fx:id="category4" alignment="CENTER" prefHeight="72.0" prefWidth="99.0" text="Stacks" GridPane.columnIndex="3">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007532956685499058" />
+                              <Stop color="#ffee00" offset="0.5122410546139358" />
+                              <Stop color="#36558a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Finale Copyist Text Ext" size="20.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0046ff" height="50.0" stroke="BLACK" strokeType="INSIDE" width="96.0" GridPane.columnIndex="4" />
+                  <Label fx:id="category5" alignment="CENTER" prefHeight="72.0" prefWidth="99.0" text="Sorting" GridPane.columnIndex="4">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007532956685499058" />
+                              <Stop color="#ffee00" offset="0.5122410546139358" />
+                              <Stop color="#36558a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Finale Copyist Text Ext" size="20.0" />
+                     </font></Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0046ff" height="50.0" stroke="BLACK" strokeType="INSIDE" width="96.0" GridPane.columnIndex="5" />
+                  <Label fx:id="category6" alignment="CENTER" prefHeight="72.0" prefWidth="99.0" text="Lists" textAlignment="CENTER" GridPane.columnIndex="5">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.007532956685499058" />
+                              <Stop color="#ffee00" offset="0.5122410546139358" />
+                              <Stop color="#36558a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Finale Copyist Text Ext" size="20.0" />
+                     </font></Label>
+                  <ImageView fx:id="buttonImage1" fitHeight="65.0" fitWidth="96.0" onMousePressed="#Display2" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage2" fitHeight="62.0" fitWidth="96.0" GridPane.columnIndex="1" onMousePressed="#Display7" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage3" fitHeight="62.0" fitWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="2" onMousePressed="#Display12">
+                     <image>
+                        <Image url="@two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage4" fitHeight="63.0" fitWidth="96.0" GridPane.columnIndex="3" GridPane.rowIndex="2" onMousePressed="#Display17">
+                     <image>
+                        <Image url="@two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage5" fitHeight="63.0" fitWidth="96.0" GridPane.columnIndex="4" GridPane.rowIndex="2" onMousePressed="#Display22">
+                     <image>
+                        <Image url="@two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage6" fitHeight="62.0" fitWidth="96.0" GridPane.columnIndex="5" GridPane.rowIndex="2" onMousePressed="#Display27">
+                     <image>
+                        <Image url="@two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage7" fitHeight="49.0" fitWidth="96.0" GridPane.rowIndex="3" onMousePressed="#Display3">
+                     <image>
+                        <Image url="@three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage8" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="3" onMousePressed="#Display8" >
+                     <image>
+                        <Image url="@three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage9" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="3" onMousePressed="#Display13">
+                     <image>
+                        <Image url="@three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage10" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="3" GridPane.rowIndex="3" onMousePressed="#Display18">
+                     <image>
+                        <Image url="@three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage11" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="4" GridPane.rowIndex="3" onMousePressed="#Display23">
+                     <image>
+                        <Image url="@/three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage12" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="5" GridPane.rowIndex="3" onMousePressed="#Display28" >
+                     <image>
+                        <Image url="@three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage13" fitHeight="53.0" fitWidth="96.0" GridPane.rowIndex="4" onMousePressed="#Display4">
+                     <image>
+                        <Image url="@four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage14" fitHeight="53.0" fitWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="4" onMousePressed="#Display9">
+                     <image>
+                        <Image url="@four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage15" fitHeight="53.0" fitWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="4" onMousePressed="#Display14">
+                     <image>
+                        <Image url="@four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage16" fitHeight="53.0" fitWidth="96.0" GridPane.columnIndex="3" GridPane.rowIndex="4" onMousePressed="#Display19">
+                     <image>
+                        <Image url="@four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage17" fitHeight="53.0" fitWidth="96.0" GridPane.columnIndex="4" GridPane.rowIndex="4" onMousePressed="#Display24">
+                     <image>
+                        <Image url="@four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage18" fitHeight="53.0" fitWidth="96.0" GridPane.columnIndex="5" GridPane.rowIndex="4" onMousePressed="#Display29">
+                     <image>
+                        <Image url="@four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage19" fitHeight="50.0" fitWidth="97.0" GridPane.rowIndex="5" onMousePressed="#Display5">
+                     <image>
+                        <Image url="@five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage20" fitHeight="50.0" fitWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="5" onMousePressed="#Display10">
+                     <image>
+                        <Image url="@five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage21" fitHeight="50.0" fitWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="5" onMousePressed="#Display15">
+                     <image>
+                        <Image url="@five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage22" fitHeight="50.0" fitWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="5" onMousePressed="#Display20">
+                     <image>
+                        <Image url="@five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage23" fitHeight="50.0" fitWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="5" onMousePressed="#Display25">
+                     <image>
+                        <Image url="@five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage24" fitHeight="50.0" fitWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="5" onMousePressed="#Display30">
+                     <image>
+                        <Image url="@five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage25" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="1" onMousePressed="#Display11">
+                     <image>
+                        <Image url="@one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage26" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="3" GridPane.rowIndex="1" onMousePressed="#Display16">
+                     <image>
+                        <Image url="@one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage27" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="4" GridPane.rowIndex="1" onMousePressed="#Display21">
+                     <image>
+                        <Image url="@one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage28" fitHeight="49.0" fitWidth="96.0" GridPane.columnIndex="5" GridPane.rowIndex="1" onMousePressed="#Display26">
+                     <image>
+                        <Image url="@one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="buttonImage29" fitHeight="52.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" onMousePressed="#Display1">
+                     <image>
+                        <Image url="one.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

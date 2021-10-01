@@ -1,0 +1,14 @@
+#pane{
+    -fx-background-image: url("JeopardyBack.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1500 900;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+#layout{
+-fx-background-image: url("Question.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1500 900;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
